@@ -117,7 +117,7 @@ public class Tutorial
         int n = 10;
 
         // write for loop here
-        for (int i = 0; i <= 10; i++)
+        for (int i = 0; i < n; i++)
         {
             Console.WriteLine(x);
         }
@@ -139,13 +139,13 @@ public class Tutorial
         //Print X to the console N time using a while loop
         string x1 = "Hi";
         int n1 = 10;
-        int i1 = 0;
+        
 
         //write while loop here
-        while (i1 < n)
+        while (n1 > 0)
         {
             Console.WriteLine(x1);
-            i1++;
+            n1--;
         }
 
         //Methods
