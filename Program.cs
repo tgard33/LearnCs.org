@@ -89,6 +89,21 @@ public class Tutorial
         Console.WriteLine(inventory["orange"]);
         Console.WriteLine(inventory["banana"]);
 
+        //Strings
+        //Use string formatting to format the variables firstName, lastName and age to form the following sentence into the string sentence:
+
+        //John Doe is 27 years old.
+        string firstName = "John";
+        string lastName = "Doe";
+        int age = 27;
+
+        // TODO: change this
+        string sentence = $"{firstName} {lastName} is {age} years old";
+        string sentenceV2 = String.Format("{0} {1} is {2} years old.", firstName, lastName, age);
+
+        Console.WriteLine(sentence);
+        Console.WriteLine(sentenceV2);
+
 
     }
 }
