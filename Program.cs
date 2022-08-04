@@ -5,6 +5,7 @@ public class Tutorial
     public static void Main()
     {
         //Variables and Types Exercise
+
         //Define three variables:
         //a string named productname equal to tv.
         //an integer named productyear equal to 2012.
@@ -22,12 +23,14 @@ public class Tutorial
 
 
         //Type Conversion Exercise
+
         //Convert myDBL to int and print it.
         double myDBL = 99.0;
         myDBL = Convert.ToInt32(99.0);
         Console.WriteLine(myDBL);
 
         //Conditionals
+
         //In this exercise, you must construct an if statement that checks if the number guess is equal to 500.
         //If that is the case, use Console.WriteLine to display "Success!".
         int guess = 500;
@@ -41,6 +44,7 @@ public class Tutorial
             Console.WriteLine("false");
 
         //Arrays
+
         //Define an array called fruits that holds the following strings: "apple", "banana", and "orange".
 
         // write your code here
@@ -50,6 +54,40 @@ public class Tutorial
         Console.WriteLine(fruits[1]);
         Console.WriteLine(fruits[2]);
 
+        //Difference Between Lists and Arrays:
+        //The difference between a list and an array is that lists are dynamic sized, while arrays have a fixed size.
+        //When you do not know the amount of variables your array should hold, use a list instead.
+
+        //Lists
+
+        //Construct a list of the first 5 prime numbers(2, 3, 5, 7, 11) called primeNumbers.
+
+        // TODO: add your code here
+        List<int> primeNumbers = new List<int>{ 2, 3, 5, 7, 11 };
+        // test code
+        Console.WriteLine(primeNumbers.Count);
+        Console.WriteLine(primeNumbers[0]);
+        Console.WriteLine(primeNumbers[1]);
+        Console.WriteLine(primeNumbers[2]);
+        Console.WriteLine(primeNumbers[3]);
+        Console.WriteLine(primeNumbers[4]);
+
+        //Dictionaries
+
+        //Create a new dictionary called inventory that holds 3 names of fruits, and the amount they are in stock.
+        //Here is the inventory specification:
+            //3 of type apple
+            //5 of type orange
+            //2 of type banana
+        // TODO: add the inventory dictionary here
+        Dictionary<string, int> inventory = new Dictionary<string, int>();
+        inventory.Add("apple", 3);
+        inventory.Add("orange", 5);
+        inventory.Add("banana", 2);
+
+        Console.WriteLine(inventory["apple"]);
+        Console.WriteLine(inventory["orange"]);
+        Console.WriteLine(inventory["banana"]);
 
 
     }
