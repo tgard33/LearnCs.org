@@ -104,6 +104,51 @@ public class Tutorial
         Console.WriteLine(sentence);
         Console.WriteLine(sentenceV2);
 
+        //For Loops
+        //For Loop syntax:
+        //for( [variable to count iterations] ; [conditions checked for] ; [code to execute every loop])
+        //There are several statements you can use to control a loop:
+            //break;
+            //continue;
+
+        //Print the value of variable X to the screen N number of times
+
+        string x = "Hi";
+        int n = 10;
+
+        // write for loop here
+        for (int i = 0; i <= 10; i++)
+        {
+            Console.WriteLine(x);
+        }
+
+        //Foreach Loops
+        //Purpose:
+        //A Foreach loop is used for getting items from an array. That makes this process so easier than using a for loop.
+
+        //In this exercise, you must output every item in parts with a foreach loop that has part as a variable.
+
+        string[] parts = { "CPU", "RAM", "HDD", "SSD", "GPU" };
+        //Place the loop here (Replace the comment)
+        foreach (string part in parts)
+        {
+            Console.WriteLine(part);    
+        }
+
+        //While Loops
+        //Print X to the console N time using a while loop
+        string x1 = "Hi";
+        int n1 = 10;
+        int i1 = 0;
+
+        //write while loop here
+        while (i1 < n)
+        {
+            Console.WriteLine(x1);
+            i1++;
+        }
+
+        //Methods
 
     }
 }
